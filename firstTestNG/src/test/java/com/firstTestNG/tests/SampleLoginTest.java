@@ -15,8 +15,8 @@ public class SampleLoginTest extends TestBase {
 
 	@Test
 	public void launchTest() {
-		SoftAssert softy = new SoftAssert(); 
 		
+		SoftAssert softy = new SoftAssert(); 
 		softy.assertTrue(sampleLogin.returnTrue(), "Test case is not working fine");
 		softy.assertAll();
 	}
