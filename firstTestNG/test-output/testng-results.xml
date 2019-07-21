@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="2" failed="1" ignored="0" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17537" started-at="2019-07-14T17:49:12Z" finished-at="2019-07-14T17:49:30Z">
+  <suite name="First TestNG Framework" duration-ms="128805" started-at="2019-07-21T16:04:05Z" finished-at="2019-07-21T16:06:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17537" started-at="2019-07-14T17:49:12Z" finished-at="2019-07-14T17:49:30Z">
-      <class name="com.firstTestNG.tests.SampleLoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.firstTestNG.tests.SampleLoginTest@3b0143d3]" name="setUp" is-config="true" duration-ms="16500" started-at="2019-07-14T17:49:12Z" finished-at="2019-07-14T17:49:29Z">
+    <test name="midtrans tests" duration-ms="128805" started-at="2019-07-21T16:04:05Z" finished-at="2019-07-21T16:06:14Z">
+      <class name="com.firstTestNG.tests.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="setUp" is-config="true" duration-ms="12128" started-at="2019-07-21T16:04:05Z" finished-at="2019-07-21T16:04:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="launchTest()[pri:0, instance:com.firstTestNG.tests.SampleLoginTest@3b0143d3]" name="launchTest" duration-ms="9" started-at="2019-07-14T17:49:29Z" finished-at="2019-07-14T17:49:29Z">
-          <exception class="java.lang.ArithmeticException">
+        <test-method status="PASS" signature="testUserAbleToBuyPillowSuccessfully_TC01()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="testUserAbleToBuyPillowSuccessfully_TC01" duration-ms="20358" started-at="2019-07-21T16:04:17Z" description="Verify user able to buy the pillow successfully" finished-at="2019-07-21T16:04:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserAbleToBuyPillowSuccessfully_TC01 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="tearDown" is-config="true" duration-ms="958" started-at="2019-07-21T16:04:38Z" finished-at="2019-07-21T16:04:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="setUp" is-config="true" duration-ms="10345" started-at="2019-07-21T16:04:39Z" finished-at="2019-07-21T16:04:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="testUserUnAbleToBuyPillow_TC02()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="testUserUnAbleToBuyPillow_TC02" duration-ms="20527" started-at="2019-07-21T16:04:49Z" description="Verify user unable to buy the pillow" finished-at="2019-07-21T16:05:10Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[/ by zero]]>
+              <![CDATA[The following asserts failed:
+Retry link is not getting displayed expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.ArithmeticException: / by zero
-at com.firstTestNG.tests.SampleLoginTest.launchTest(SampleLoginTest.java:20)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Retry link is not getting displayed expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.firstTestNG.tests.HomePageTest.testUserUnAbleToBuyPillow_TC02(HomePageTest.java:59)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -29,32 +44,96 @@ at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
 at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.ArithmeticException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.firstTestNG.tests.SampleLoginTest@3b0143d3]" name="tearDown" is-config="true" duration-ms="999" started-at="2019-07-14T17:49:29Z" finished-at="2019-07-14T17:49:30Z">
+        </test-method> <!-- testUserUnAbleToBuyPillow_TC02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="tearDown" is-config="true" duration-ms="1026" started-at="2019-07-21T16:05:10Z" finished-at="2019-07-21T16:05:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.firstTestNG.tests.SampleLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="setUp" is-config="true" duration-ms="10091" started-at="2019-07-21T16:05:11Z" finished-at="2019-07-21T16:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="testUserUnAbleToBuyPillow_TC02()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="testUserUnAbleToBuyPillow_TC02" duration-ms="20033" started-at="2019-07-21T16:05:21Z" description="Verify user unable to buy the pillow" finished-at="2019-07-21T16:05:41Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Retry link is not getting displayed expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Retry link is not getting displayed expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.firstTestNG.tests.HomePageTest.testUserUnAbleToBuyPillow_TC02(HomePageTest.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserUnAbleToBuyPillow_TC02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="tearDown" is-config="true" duration-ms="967" started-at="2019-07-21T16:05:41Z" finished-at="2019-07-21T16:05:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="setUp" is-config="true" duration-ms="8979" started-at="2019-07-21T16:05:42Z" finished-at="2019-07-21T16:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testUserUnAbleToBuyPillow_TC02()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="testUserUnAbleToBuyPillow_TC02" duration-ms="21930" started-at="2019-07-21T16:05:51Z" description="Verify user unable to buy the pillow" finished-at="2019-07-21T16:06:13Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Retry link is not getting displayed expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Retry link is not getting displayed expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.firstTestNG.tests.HomePageTest.testUserUnAbleToBuyPillow_TC02(HomePageTest.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserUnAbleToBuyPillow_TC02 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.firstTestNG.tests.HomePageTest@3d99d22e]" name="tearDown" is-config="true" duration-ms="934" started-at="2019-07-21T16:06:13Z" finished-at="2019-07-21T16:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.firstTestNG.tests.HomePageTest -->
+    </test> <!-- midtrans tests -->
+  </suite> <!-- First TestNG Framework -->
 </testng-results>

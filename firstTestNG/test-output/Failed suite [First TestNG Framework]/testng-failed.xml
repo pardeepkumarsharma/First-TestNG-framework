@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [First TestNG Framework]]" parallel="methods">
+  <listeners>
+    <listener class-name="com.firstTestNG.util.TestListener"/>
+  </listeners>
+  <test thread-count="2" name="midtrans tests(failed)(failed)" parallel="methods">
+    <classes>
+      <class name="com.firstTestNG.tests.SampleLoginTest">
+        <methods>
+          <include name="testUserUnAbleToBuyPillow_TC02"/>
+          <include name="testUserAbleToBuyPillowSuccessfully_TC01"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.firstTestNG.tests.SampleLoginTest -->
+    </classes>
+  </test> <!-- midtrans tests(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [First TestNG Framework]] -->

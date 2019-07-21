@@ -5,7 +5,7 @@
     <classes>
       <class name="com.firstTestNG.tests.SampleLoginTest">
         <methods>
-          <include name="launchTest"/>
+          <include name="testUserAbleToBuyPillowSuccessfully_TC01"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>

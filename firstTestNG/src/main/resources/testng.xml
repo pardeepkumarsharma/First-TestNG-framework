@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="First TestNG Framework" thread-count="2" parallel="methods">
-	<test name="Any Automation Test">
+<suite name="First TestNG Framework" thread-count="1"
+	parallel="methods">
+	<listeners>
+		<listener class-name="com.firstTestNG.util.TestListener" />
+		<listener class-name="com.firstTestNG.util.TransformListener" />
+	</listeners>
+
+	<test name="midtrans tests">
 		<classes>
-			<class name="com.firstTestNG.tests.SampleLoginTest"></class>
+			<class name="com.firstTestNG.tests.HomePageTest"></class>
 		</classes>
 	</test>
 </suite>
